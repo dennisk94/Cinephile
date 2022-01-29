@@ -1,11 +1,15 @@
 import { NavLink } from 'react-router-dom';
 
-function NavMain( { nav } ) {
+function NavMain( { nav, toggleNav } ) {
 
-
+    function closeNav (e) {
+        if ( window.innerWidth < 600 ) {
+            toggleNav();
+        }
+    }
 
     return (
-        <nav className={ nav ? 'hide' : undefined } >
+        <nav className={ nav ? undefined : 'hide'  } onClick={ closeNav } >
             <ul>
                 <li>
                     <NavLink to="/" exact>Home</NavLink>

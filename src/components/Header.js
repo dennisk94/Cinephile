@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavMain from './NavMain';
 import { appTitle } from '../globals/globals';
-import { Fade as Hamburger } from 'hamburger-react'
+import Hamburger from './hamburger';
+
 function Header() {
 
     const [ navOpen, setNavOpen ] = useState(false);
@@ -14,9 +15,11 @@ function Header() {
   return (
 
         <header className="cinephile-header">
-            <h1><Link to="/">{ appTitle }</Link></h1>
-            <Hamburger onToggle={ showHideNav } duration={0.4} easing="ease-out"/>
-            <NavMain nav={ navOpen } />
+            <div className='inner-wrapper' >
+                <h1><Link to="/">{ appTitle }</Link></h1>
+                <Hamburger showHide={ showHideNav } checkNav={ navOpen } />
+                <NavMain nav={ navOpen } toggleNav={ showHideNav } />
+            </div>
         </header>
   )
 }
