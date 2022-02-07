@@ -1,4 +1,3 @@
-
 function hamburger( { showHide, checkNav } ) {
 
     function toggleClass(e) {

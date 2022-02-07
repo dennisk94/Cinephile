@@ -1,0 +1,60 @@
+.movies-container {
+    
+    .movie-card {
+        position: relative;
+        width: 75%;
+        margin: 2rem auto;
+
+        img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        &:hover {
+
+            .overlay {
+                display: block;
+                position: absolute;
+                   
+                .release-date {
+                    position: absolute;
+                    top: 7.5rem;
+                }
+            }
+        }
+    }
+
+    @media ( min-width: 37.5em ) {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        .movie-card {
+            width: 80%;
+        }
+    }
+
+    @media ( min-width: 50em ) {
+
+        grid-template-columns: repeat( 3, 1fr );
+
+        .movie-card {
+            width: 85%;
+        }
+    }
+
+    @media ( min-width: 62.5em ) {
+
+        grid-template-columns: repeat( 4, 1fr );
+
+        .movie-card {
+            width: 92%;
+        }
+    }
+}

@@ -13,9 +13,10 @@ function PageAbout() {
           <Link to={{ pathname: "https://www.themoviedb.org/" }} target="_blank"  ><img src={ TMDB } alt="TMDB Logo" /></Link>
           </div>
         </div>
+        
       </div>
     )
-  }
+}
   
-  export default PageAbout;
+export default PageAbout;
   

@@ -1,20 +1,37 @@
 header {
 
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
-    .inner-wrapper {
-        width: 100%;
+    h1 {
+        z-index: 99999;
+        margin: 1rem;
+        a {
+            margin: 0.5rem;
+            font-size: 1.8rem;
+        }
+        
+    }
+
+    .app-logo-wrapper {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         align-items: center;
-        // padding: 0rem 1rem;
+        width: 2.5rem;
+        
+        img {
+            width: 100%;
+            height: auto;
+            z-index: 99999;
+        }
     }
 
     nav {
+        z-index: 9999;
+        position: absolute;
+        top: 6rem;
+        background-color: lightgrey;
         width: 100%;
     }
 
@@ -22,10 +39,8 @@ header {
         display: none;
     }
 
-    
     ul {
         padding: 0;
-        // background-color: rgb(204, 204, 204);
     }
 
     li {
@@ -34,11 +49,9 @@ header {
         margin: 0;
     }
 
-    h1 a {
-        font-size: 2rem;
-    }
 
     a {
+        color: rgb(46 199 255);
         text-decoration: none;
         display: block;
         padding: 1rem;
@@ -46,13 +59,24 @@ header {
         font-weight: 700;
 
         &:hover {
-            color: green;
+            color: white;
         }
     }
 
     @media ( min-width: 37.5em ) {
 
         flex-wrap: nowrap;
+
+        nav {
+            position: absolute;
+            top: 1rem;
+            background-color: transparent;
+            width: 100%;
+
+            ul {
+                margin-right: 2rem;
+            }
+        }
 
         .inner-wrapper {
             width: 100%;

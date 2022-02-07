@@ -1,0 +1,218 @@
+.single-movie-page {
+
+    .single-movie-container {
+        
+        .single-movie-content {
+
+            .single-movie-info {
+
+                .movie-featurette {
+                    iframe {
+                        display: block;
+                        width: 90%;
+                        height: 35vh;
+                        margin: 3rem auto;
+                    }
+                }
+            }
+            
+            .single-movie-poster {
+
+                img {
+                    display: block;
+                    width: 90%;
+                    margin: 0 auto;
+
+                }
+
+                @media ( min-width: 50em ) {
+
+                    img {
+                        width: 65%;
+                    }
+
+                }
+
+                @media ( min-width: 62.5em ) {
+                    img {
+                        width: 35%;
+                        margin: 0rem 0rem 0rem 1rem;
+                    }
+                }
+
+            }
+
+            @media ( min-width: 50em ) {
+                .single-movie-info {
+
+                    .info-container {
+                        margin: 0rem 6rem;
+                    }
+
+                    .top-billed-cast{
+                        
+                        .cast-container {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                        }
+                    }
+
+                    .movie-featurette {
+                        iframe {
+                            display: block;
+                            width: 90%;
+                            height: 41vh;
+                        }
+                    }    
+                }
+            }
+
+            @media ( min-width: 62.5em ) {
+                .single-movie-info {
+
+                    .top-billed-cast {
+                        .cast-container {
+                            grid-template-columns: repeat( 3, 1fr );
+                        }
+                    }
+
+                    .info-container {
+                        position: absolute;
+                        top: 10rem;
+                        left: 40%;
+                        margin: 0rem;
+                    }
+
+                    .release-rating-container {
+                        justify-content: flex-start;
+                    }
+
+                    .heart-trailer {
+                        justify-content: space-around;
+                    }
+
+                    .movie-featurette {
+                        iframe {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+
+            @media ( min-width: 75em ) {
+                .single-movie-info {
+
+                    margin: 12rem 0rem 0rem 0rem;
+
+                    .top-billed-cast {
+                        .cast-container {
+                            grid-template-columns: repeat( 6, 1fr );
+
+                            .cast-member {
+                                img {
+                                    width: 70%;
+                                }
+
+                                p {
+                                    padding: 0rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .movie-featurette {
+
+                        position: absolute;
+                        top: 30rem;
+                        right: 29%;
+
+                        iframe {
+                            width: 192%;
+                        }
+                    }
+                }
+            }
+        }
+
+            .single-movie-info {
+
+                h2, p, .genres {
+                    padding: 0rem 1rem;
+                }
+
+                .release-rating-container {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    p {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .genres {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0rem 0rem 1rem 0rem;
+
+                    p {
+                        padding: 0rem 0.4rem 0rem 0rem;
+                    }
+                }
+
+                .heart {
+                    width: 36px;
+                    cursor: pointer;
+                }
+
+                .heart-trailer {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin: 0rem 0rem 2rem 0rem;
+
+                    .trailer-button-container {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+
+                        svg {
+                            width: 36px;
+                            height: auto;
+                            fill: white;
+                        }
+
+                        p {
+                            padding: 0rem 0rem 0rem 0.5rem;
+                            margin: 0rem;
+                        }
+                    }       
+                }
+
+                .top-billed-cast {
+
+                    h3 {
+                        margin: 2rem 1rem;
+                    }
+
+                    .cast-member {
+
+                        position: relative;
+                        margin: 0rem 0rem 6rem 0rem;
+
+                        img {
+                            display: block;
+                            width: 65%;
+                            margin: 0 auto;
+                        }
+
+                        p {
+                            margin: 1rem 2.5rem 0rem 2.5rem;
+                            padding: 1rem;
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+    }
+}

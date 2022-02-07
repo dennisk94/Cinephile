@@ -1,0 +1,80 @@
+.awssld {
+
+    margin: 3rem 0rem;
+
+    .awssld__wrapper {
+
+        overflow: visible;
+        width: 250px;
+        margin: 0 auto;
+        border-radius: 20px;
+
+        .awssld__container {
+            height: 209px;
+        }
+
+        .awssld__controls {
+            visibility: visible;
+
+            button.awssld__next {
+                padding: 0rem 2rem 0rem 0rem;
+                right: -2.4rem;
+
+                span {
+                    height: 20px;
+                }
+            }
+
+            button.awssld__prev {
+                left: -2.4rem;
+                padding: 0rem 0rem 0rem 2rem;
+
+                span {
+                    height: 20px;
+                }
+            }
+
+            
+        }
+       
+        .movie-poster-awesome {
+            height: -webkit-fill-available;
+            object-fit: cover;
+            position: absolute;
+            width: 250px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }        
+
+        &:hover {
+
+            .overlay {
+
+                .release-date {
+                    visibility: visible;
+                    position: absolute;
+                    top: 8.5rem;
+                }
+
+                .display-text-group {
+                    color: white;
+                    display: block;
+                    position: absolute;
+                    top: 15rem;
+                }
+
+                .displayed-text {
+                    visibility: hidden;
+                    top: 12rem;
+                }
+
+            }
+        }
+    }
+
+    .awssld__bullets {
+        display: none;
+    }
+}
