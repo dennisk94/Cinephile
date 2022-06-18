@@ -2,12 +2,17 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import SingleMovie from '../components/SingleMovie';
 import { API_TOKEN } from '../globals/globals';
+import { appTitle } from '../globals/globals';
 
 function PageSingleMovie() {
 
   const [movieData, setMovieData] = useState(null);
 
     const { id } = useParams();
+
+    useEffect(() => {
+      document.title = `${appTitle} - Movie`;
+    }, []);
     
     useEffect(() => {
 

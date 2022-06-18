@@ -1,6 +1,5 @@
 import FavButton from './FavButton';
 import { Link } from 'react-router-dom';
-import useGlobal from '../store/globalAppState';
 import { useMediaQuery } from 'react-responsive';
 
 function MovieCardFavsPage( { movieObj } ) {

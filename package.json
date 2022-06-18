@@ -1,6 +1,7 @@
 {
   "name": "cinephile",
   "version": "0.1.0",
+  "homepage": "/cinephile",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
