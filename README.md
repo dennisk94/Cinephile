@@ -2,7 +2,7 @@
 
 A movie database application created with React using the TMDB API. Modern techniques and methodologies were utilized
 
-[Live Site](https://denniskim.codes/cinephile/)
+[Live Site](https://denniskimweb.ca/cinephile/)
 
 ## Table of contents
 
